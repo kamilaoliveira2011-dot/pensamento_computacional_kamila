@@ -1,0 +1,104 @@
+
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog</title>
+
+    <style>
+        header {
+            background-color: #f3c6dc;
+            padding: 10px;
+            text-align: center;
+        }
+
+        h1 {
+            font-size: 25px;
+        }
+
+        h2, p {
+            color: #e90061;
+            font-weight: bold;
+        }
+
+        main {
+            display: flex;
+            flex-direction: column;
+            gap: 30px;
+            padding: 20px;
+        }
+
+        article {
+            border: 2px solid #f3c6dc;
+            padding: 15px;
+        }
+
+        article img {
+            width: 220px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h1>𝕸𝖊𝖚 𝕭𝖑𝖔𝖌 𝖉𝖊 𝕾𝖔𝖇𝖗𝖊𝖓𝖆𝖙𝖚𝖗𝖆𝖑💫</h1>
+        <p>Vou compartilhar um pouco sobre a série</p>
+    </header>
+
+    <main>
+
+    
+        <article>
+            <img src="https://i.pinimg.com/736x/4a/8b/86/4a8b86509757a0d866840fcbb4eb35e3.jpg"
+                 alt="Sam e Dean Winchester">
+
+            <div>
+                <h2>Meu primeiro post</h2>
+
+                <p>Por: 𝓚𝓪𝓶𝓲𝓵𝓪</p>
+
+                <p>
+                    Boas-vindas ao meu blog de Sobrenatural.
+                    Aqui eu vou compartilhar coisas sobre a série.
+                </p>
+
+                <button>❤️ <span>0</span></button>
+                <button>👍 <span>0</span></button>
+            </div>
+        </article>
+
+    
+        <article>
+            <img src="https://i.pinimg.com/736x/4a/8b/86/4a8b86509757a0d866840fcbb4eb35e3.jpg" alt="Sam e Dean Winchester">
+            <h2> segundo post</h2>
+
+            <p>Por: 𝓚𝓪𝓶𝓲𝓵𝓪</p>
+
+            <p>
+        Hoje vou falar um pouco mais sobre Sam e Dean e suas aventuras caçando criaturas sobrenaturais.
+            </p>
+ <button>❤️ <span>0</span></button>
+   <button>👍 <span>0</span></button>
+           
+        </article>
+
+    </main>
+
+    <script>
+        const botoes = document.querySelectorAll("button");
+
+        botoes.forEach(function(botao) {
+            botao.addEventListener("click", function() {
+                let texto = botao.querySelector("span");
+                texto.textContent = Number(texto.textContent) + 1;
+            });
+        });
+    </script>
+
+</body>
+
+</html>
+
